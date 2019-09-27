@@ -1,0 +1,30 @@
+body{
+  margin: auto;
+  padding: 0;
+}
+
+ul {
+  background-color: black;
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+li {
+  text-decoration: none;
+  float: right;
+  color: white;
+  font-size: 24px;
+  padding: 30px 16px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
