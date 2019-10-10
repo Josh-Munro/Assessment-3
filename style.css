@@ -9,10 +9,11 @@ ul {
   margin-top: 0;
   padding: 0;
   overflow: hidden;
+  margin-bottom: 0px;
 }
 
-img {
-  width: 60px;
+.logo {
+  width: 100px;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -26,5 +27,33 @@ li {
   padding: 30px 16px;
   display: block;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+}
+
+
+.deal {
+  margin-top: 0px;
+  width: 100%;
+  position: relative;
+  margin-left: 0px;
+  z-index: -1;
+}
+
+
+.landing-page {
+  height: 600px;
+  background-color: tomato;
+}
+
+.landing-page img {
+  margin-left: 50%;
+  margin-top: 100px;
+  width: 40%;
+}
+
+.landing-page h1 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  font-size: 60px;
+
+
 }
