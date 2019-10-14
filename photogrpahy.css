@@ -5,6 +5,8 @@ body {
 }
 
 
+
+
 .wrapper {
   width: 90%;
   margin-left: 5%;
@@ -26,16 +28,22 @@ body {
   width: 100%;
   z-index: -1;
   display: inline;
+  object-fit: cover;
 }
 
 li {
   float: right;
   list-style-type: none;
   padding: 20px;
-  text-decoration-style: none;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 
+}
+
+li a {
+  text-decoration-style: none;
+  color: black;
+  text-underline-position: none;
 }
 
 .sub-heading {
@@ -63,9 +71,25 @@ li {
   font-size: 60px;
 }
 
-.home-blog-title h1 {
+.sub-titles h1 a span {
+  color: #44D359;
+  padding-right: 10px;
+  font-size: 40px;
+  margin-left: -10px;
+}
+
+.title span {
+  color: #44D359;
+  padding-right: 10px;
+  font-size: 40px;
+}
+
+.sub-titles h1 a {
   font-size: 40px;
   font-family: "Roboto";
+  text-decoration: none;
+  color: black;
+  padding:10px;
 }
 
 .grid-container {
@@ -76,10 +100,28 @@ li {
 
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-top: 10px;
+  grid-column-gap: 50px;
+
+}
+
+.gallery-grid2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 10px;
+  grid-column-gap: 50px;
+
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 100%;
+  margin-top: 40px;
+
 }
 
 .card:hover {
@@ -125,10 +167,68 @@ li {
   }
 }
 
+.about-card img {
+  float:left;
+  width: 60%;
+}
+
+.about-card h1 {
+  float: left;
+  margin-left: 50px;
+}
+.about-card p {
+  display: inline;
+  margin-top: 40px;
+}
+
+
+
+.blog-title {
+  font-family: "Roboto";
+  margin-top: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.main-image img{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.blog-content {
+  width: 80%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content p {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.blog-content img {
+  width: 100%;
+}
+
+.footer {
+  background-color: lightgrey;
+}
+
+
 @media only screen and (max-width: 600px) {
 
   .grid-container {
     grid-template-columns: auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .gallery-grid img {
+    margin-top: 20px;
   }
 
   .title {
@@ -137,6 +237,61 @@ li {
 
   .sub-heading h1 span {
     font-size: 20px;
-    padding-rightL 0px;
+    padding-right: 0px;
   }
+
+  .blog-content p{
+    font-size: 17px;
+  }
+
+  #main-image {
+    content: url("https://www.elsetge.cat/myimg/f/193-1932858_tiger-8k-ultra-hd.jpg")
+  }
+
+  li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+}
+
+
+
+span {
+  color: #44D359;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.about-box {
+
+}
+
+.about-box-img {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 42.7%;
+  margin-top: 20px;
+
+}
+
+.about-box-img img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
+.about-box h1 {
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.about-box h3 {
+  font-family: "Roboto";
+  text-align: center;
 }
